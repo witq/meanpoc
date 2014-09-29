@@ -1,0 +1,14 @@
+# grunt taks aliases configuration
+
+default:
+  - 'build'
+
+build:
+  - 'clean'
+  - 'copy'
+  - 'less'
+  - 'injector'
+
+develop:
+  - 'build'
+  - 'concurrent:dev'

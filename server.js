@@ -1,4 +1,4 @@
-(function() {
+(function () {
 
   'use strict';
 
@@ -11,13 +11,13 @@
   // config
 
     app = express(),
-    db = require('./config/db'),
+    db = require('./config/server/database'),
     port = process.env.port || 8080;
 
   app.use(bodyParser.json());
   app.use(bodyParser.json({
-    type: 'application/vnd.api+json' }
-  ));
+    type: 'application/vnd.api+json'
+  }));
   app.use(bodyParser.urlencoded({
     extended: true
   }));
@@ -32,6 +32,5 @@
 
   app.listen(port);
   console.log('Listening on ' + port);
-
 
 }());

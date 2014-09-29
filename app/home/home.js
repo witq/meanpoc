@@ -7,11 +7,11 @@
 
     <title>MEANPOC</title>
 
-    <!-- inject:vendor:css -->
-    <!-- endinject -->
+    <!-- injector:bower:css -->
+    <!-- endinjector -->
 
-    <!-- inject:app:css -->
-    <!-- endinject -->
+    <!-- injector:css -->
+    <!-- endinjector -->
 
 </head>
 <body ng-app="meanPocApp" ng-controller="AppController as app">
@@ -32,11 +32,12 @@
 
     </div>
 
-    <!-- inject:vendor:js -->
-    <!-- endinject -->
+    <!-- injector:bower:js -->
+    <!-- endinjector -->
 
-    <!-- inject:app:js -->
-    <!-- endinject -->
+    <!-- injector:js -->
+    <script src="/public/app/home/home.js"></script>
+    <!-- endinjector -->
 
 </body>
 </html>

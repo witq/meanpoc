@@ -1,0 +1,8 @@
+# grunt concurrent task config
+
+dev:
+  tasks:
+    - 'watch'
+    - 'nodemon'
+  options:
+    logConcurrentOutput: true

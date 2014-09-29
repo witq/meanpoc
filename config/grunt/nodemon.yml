@@ -1,0 +1,4 @@
+# grunt nodemon task configuration
+
+app:
+  script: 'server.js'

@@ -1,0 +1,5 @@
+# grunt complexity task configuration
+
+default:
+  src:
+    - 'src/app/{,*/}*.js'

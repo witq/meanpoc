@@ -1,0 +1,4 @@
+# grunt clean task configuration
+
+public:
+  - 'public/*'

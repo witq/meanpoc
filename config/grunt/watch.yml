@@ -1,0 +1,19 @@
+# grunt watch task config
+
+options:
+  livereload: true
+
+app:
+  files:
+    - 'src/app.js'
+    - 'src/app/**/*.js'
+  tasks:
+    - 'copy:app'
+    - 'injector'
+
+styles:
+  files:
+    - 'src/styles/**/*.less'
+  tasks:
+    - 'less:app'
+    - 'injector'

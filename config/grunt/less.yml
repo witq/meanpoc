@@ -1,0 +1,7 @@
+# grunt less task configuration
+
+app:
+  options:
+    paths: 'src/vendor/bootstrap/less'
+  files:
+    'public/assets/css/app.css': 'src/styles/app.less'

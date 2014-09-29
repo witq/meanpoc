@@ -1,0 +1,19 @@
+# grunt copy task config
+
+app:
+  files:
+    - expand: true
+      cwd: 'src'
+      src:
+        - 'index.html'
+        - '**/*.js'
+        - '!vendor/**/*'
+      dest: 'public'
+
+vendor:
+  files:
+    - expand: true
+      cwd: 'src'
+      src:
+        - 'vendor/**/*'
+      dest: public
