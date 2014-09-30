@@ -3,17 +3,24 @@
 options:
   livereload: true
 
+manifest:
+  files:
+    - 'src/index.html'
+  tasks:
+    - 'copy'
+    - 'build'
+
 app:
   files:
     - 'src/app.js'
     - 'src/app/**/*.js'
   tasks:
-    - 'copy:app'
-    - 'injector'
+    - 'newer:copy:app'
+    - 'newer:injector:app'
 
 styles:
   files:
     - 'src/styles/**/*.less'
   tasks:
-    - 'less:app'
-    - 'injector'
+    - 'newer:less:app'
+    - 'newer:injector:app'
