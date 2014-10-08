@@ -14,6 +14,7 @@ app:
   files:
     - 'src/app.js'
     - 'src/app/**/*.js'
+    - 'src/app/**/*.tpl.html'
   tasks:
     - 'newer:copy:app'
     - 'newer:injector:app'

@@ -2,56 +2,42 @@
 
   'use strict';
 
-  var AppController, routes;
+  var AppController;
 
-  routes = [
-    {
-      href: '/one',
-      title: 'One',
-      templateUrl: 'views/one.html',
-      controller: 'OneViewController',
-      controllerAs: 'one'
-    },
-    {
-      href: '/two',
-      title: 'Two',
-      templateUrl: 'views/two.html',
-      controller: 'TwoViewController',
-      controllerAs: 'two'
-    }
-  ];
-
-  AppController = function($log) {
+  AppController = function($log, RouteService) {
 
     var app = this;
 
     $log.debug('AppController loaded');
 
-    app.routes = routes;
+    app.routes = RouteService.get();
 
   };
 
   angular
     .module('meanPocApp', [
-      'ngRoute'
+      'ngRoute',
+      'appCommon',
+      'appHomeView',
+      'appListView'
     ])
     .config([
       '$routeProvider',
-      function($routeProvider) {
+      function ($routeProvider) {
 
-        // angular.forEach(routes, function(route) {
-        //   $routeProvider.when(route, {
-        //     title: route.title,
-        //     templateUrl: route.templateUrl,
-        //     controller: route.controller,
-        //     controllerAs: route.controllerAs
-        //   });
-        // });
+        $routeProvider
+          .when('/', {
+            redirectTo: '/home'
+          })
+          .otherwise({
+            redirectTo: '/'
+          });
 
       }
     ])
     .controller('AppController', [
       '$log',
+      'RouteService',
       AppController
     ]);
 

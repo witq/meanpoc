@@ -9,6 +9,7 @@ app:
   files:
     src:
       - 'public/app.js'
+      - 'public/app/**/_*'
       - 'public/app/**/*.js'
       - 'public/assets/**/*.css'
 

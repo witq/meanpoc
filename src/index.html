@@ -22,8 +22,8 @@
                 <a class="navbar-brand" href="/">MEANPOC</a>
             </div>
             <ul class="nav navbar-nav">
-                <li ng-repeat="route in app.routes">
-                    <a ng-href="#{{route.href}}" ng-bind="route.title"></a>
+                <li ng-repeat="route in app.routes track by $index">
+                    <a ng-href="#{{route.originalPath}}" ng-bind="route.title"></a>
                 </li>
             </ul>
         </nav>
