@@ -1,4 +1,6 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
+
+  'use strict';
 
   // This file is here just to kick-start Grunt, all the task configs
   // are in the config/grunt directory.
@@ -9,7 +11,9 @@ module.exports = function(grunt) {
 
   loadGruntConfig(grunt, {
     configPath: path.join(process.cwd(), 'config/grunt'),
-    jitGrunt: false
+    jitGrunt: {
+      'useminPrepare': 'grunt-usemin'
+    }
   });
 
   timeGrunt(grunt);
