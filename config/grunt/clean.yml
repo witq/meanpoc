@@ -2,3 +2,7 @@
 
 public:
   - 'public/*'
+
+compile:
+  - '.tmp'
+  - 'public/app/**/*.js'

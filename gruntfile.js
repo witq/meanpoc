@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 
   loadGruntConfig(grunt, {
     configPath: path.join(process.cwd(), 'config/grunt'),
-    jitGrunt: true
+    jitGrunt: false
   });
 
   timeGrunt(grunt);

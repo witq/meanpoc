@@ -1,0 +1,3 @@
+html: 'public/index.html'
+options:
+  dest: 'public'

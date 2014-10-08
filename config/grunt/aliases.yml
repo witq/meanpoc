@@ -9,6 +9,19 @@ build:
   - 'less'
   - 'injector'
 
+compile:
+  - 'build'
+  - 'useminPrepare'
+  - 'concat:generated'
+  - 'ngAnnotate'
+  - 'uglify:generated'
+  - 'usemin'
+  - 'clean:compile'
+
 develop:
   - 'build'
   - 'concurrent:dev'
+
+launch:
+  - 'compile'
+  - 'nodemon'
