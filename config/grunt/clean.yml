@@ -5,4 +5,4 @@ public:
 
 compile:
   - '.tmp'
-  - 'public/app/**/*.js'
+  - 'public/app'

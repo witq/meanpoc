@@ -11,9 +11,9 @@ module.exports = function (grunt) {
 
   loadGruntConfig(grunt, {
     configPath: path.join(process.cwd(), 'config/grunt'),
-    jitGrunt: {
-      'useminPrepare': 'grunt-usemin'
-    }
+    // jitGrunt: {
+    //   'useminPrepare': 'grunt-usemin'
+    // }
   });
 
   timeGrunt(grunt);

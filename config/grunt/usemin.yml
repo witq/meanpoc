@@ -1,1 +1,3 @@
+# grunt usemin task config
+
 html: 'public/index.html'

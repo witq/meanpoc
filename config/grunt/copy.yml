@@ -14,7 +14,6 @@ app:
       cwd: 'src'
       src:
         - '**/*.js'
-        - '**/*.tpl.html'
         - '!vendor/**/*'
       dest: 'public'
 

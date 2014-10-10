@@ -3,3 +3,6 @@
 app:
   script: 'server.js'
   watch: './server.js'
+  ignore:
+    - node_modules/**
+    - src/**

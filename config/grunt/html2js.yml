@@ -1,0 +1,8 @@
+# grunt html2js task configuration
+
+options:
+  module: appTemplates
+app:
+  src:
+    - 'src/app/**/*.tpl.html'
+  dest: 'public/assets/_templates.js'

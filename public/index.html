@@ -25,7 +25,7 @@
                 <a class="navbar-brand" href="/">MEANPOC</a>
             </div>
             <ul class="nav navbar-nav">
-                <li ng-repeat="route in app.routes track by $index">
+                <li ng-repeat="route in app.routes">
                     <a ng-href="#{{route.originalPath}}" ng-bind="route.title"></a>
                 </li>
             </ul>
@@ -42,7 +42,18 @@
     <script src="/vendor/angular-route/angular-route.js"></script>
     <!-- endinject -->
 
-    <script src="app.js"></script>
+    <!-- build:js /app.js -->
+    <!-- inject:app:js -->
+    <script src="/app.js"></script>
+    <script src="/app/common/_module.js"></script>
+    <script src="/app/home/_module.js"></script>
+    <script src="/app/list/_module.js"></script>
+    <script src="/app/common/RouteService.js"></script>
+    <script src="/app/home/HomeViewController.js"></script>
+    <script src="/app/list/ListViewController.js"></script>
+    <script src="/assets/_templates.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
 
 </body>
 </html>

@@ -11,6 +11,7 @@ app:
       - 'public/app.js'
       - 'public/app/**/_*'
       - 'public/app/**/*.js'
+      - 'public/assets/**/*.js'
       - 'public/assets/**/*.css'
 
 bower:

@@ -1,3 +1,5 @@
+# grunt useminPrepare task config
+
 html: 'public/index.html'
 options:
   dest: 'public'

@@ -1,4 +1,4 @@
-# grunt taks aliases configuration
+# grunt task aliases configuration
 
 default:
   - 'build'
@@ -7,6 +7,7 @@ build:
   - 'clean'
   - 'copy'
   - 'less'
+  - 'html2js'
   - 'injector'
 
 compile:

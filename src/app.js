@@ -17,6 +17,7 @@
   angular
     .module('meanPocApp', [
       'ngRoute',
+      'appTemplates',
       'appCommon',
       'appHomeView',
       'appListView'

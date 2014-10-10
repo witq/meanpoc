@@ -16,6 +16,7 @@ app:
     - 'src/app/**/*.js'
     - 'src/app/**/*.tpl.html'
   tasks:
+    - 'newer:html2js'
     - 'newer:copy:app'
     - 'newer:injector:app'
 
